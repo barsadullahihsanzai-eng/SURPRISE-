@@ -190,3 +190,33 @@ function playMusic(){
     );
 
 }
+
+// 🎉 Royal Birthday Celebration
+
+function birthdayCelebration(){
+
+    createConfetti();
+
+    sparkleRain();
+
+    document.getElementById("cakeMessage").innerHTML =
+    "🎉 Happy 14th Birthday Queen Ñajmusama 👑✨";
+
+}
+
+
+// Automatic little magic when opening surprise
+
+let oldOpen = openSurprise;
+
+openSurprise = function(){
+
+    oldOpen();
+
+    setTimeout(()=>{
+
+        birthdayCelebration();
+
+    },1000);
+
+};
