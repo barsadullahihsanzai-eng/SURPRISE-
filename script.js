@@ -239,3 +239,8 @@ document.addEventListener("click", function(e){
     cutCake();
   }
 });
+
+window.lightCandles = lightCandles;
+window.makeWish = makeWish;
+window.blowCandles = blowCandles;
+window.cutCake = cutCake;
