@@ -1,1 +1,84 @@
 
+/* 👑 Royal Queen Decorations */
+
+body::after{
+
+    content:"👑 🍭 🍉 🌸 🦋 ✨ 🎈";
+
+    position:fixed;
+
+    bottom:10px;
+
+    left:0;
+
+    width:100%;
+
+    text-align:center;
+
+    font-size:35px;
+
+    animation:decorate 5s infinite;
+
+}
+
+
+@keyframes decorate{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+
+
+/* Birthday Title Glow */
+
+.welcome h1,
+#birthday h1{
+
+    animation:titleGlow 2s infinite alternate;
+
+}
+
+
+@keyframes titleGlow{
+
+    from{
+
+        text-shadow:
+        0 0 10px gold;
+
+    }
+
+    to{
+
+        text-shadow:
+        0 0 30px pink,
+        0 0 50px gold;
+
+    }
+
+}
+
+
+
+/* Royal Card Effect */
+
+.message-card,
+.cake-area{
+
+    border:2px solid rgba(255,215,0,0.5);
+
+    box-shadow:
+    0 0 30px rgba(255,215,0,0.4);
+
+      }
