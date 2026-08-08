@@ -194,7 +194,201 @@ button:hover{
 
 }
 
+/* 🍭 Lollipop & Watermelon Royal Garden */
 
+.royal-decoration{
+    text-shadow:0 0 15px white;
+}
+
+
+.royal-decoration::after{
+
+    content:"🍭 🍭 🍉 🍉 🌸 🌸 🍭 🍉";
+
+    display:block;
+
+    margin-top:20px;
+
+    font-size:45px;
+
+    animation:candyMove 5s infinite ease-in-out;
+
+}
+
+
+
+@keyframes candyMove{
+
+    0%{
+        transform:translateX(-20px);
+    }
+
+    50%{
+        transform:translateX(20px);
+    }
+
+    100%{
+        transform:translateX(-20px);
+    }
+
+}
+
+
+
+/* Balloons */
+
+body::before{
+
+    content:"🎈 🎈 🎈 🎈 🎈";
+
+    position:fixed;
+
+    top:10px;
+
+    left:0;
+
+    width:100%;
+
+    font-size:35px;
+
+    animation:balloons 10s infinite linear;
+
+    z-index:-1;
+
+}
+
+
+
+@keyframes balloons{
+
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(600px);
+    }
+
+}
+
+
+
+/* Royal Glow */
+
+h2{
+
+    color:#ffe6ff;
+
+    text-shadow:
+    0 0 10px gold,
+    0 0 20px pink;
+
+}
+
+
+
+/* Cake Celebration */
+
+.cake:hover{
+
+    transform:scale(1.15);
+
+}
+
+
+
+/* Gift Style */
+
+.gift-box{
+
+    font-size:80px;
+
+    cursor:pointer;
+
+    animation:gift 2s infinite;
+
+}
+
+
+@keyframes gift{
+
+    50%{
+
+        transform:rotate(5deg) scale(1.1);
+
+    }
+
+}
+
+
+
+/* Sparkle Effect */
+
+.sparkle{
+
+    position:absolute;
+
+    font-size:25px;
+
+    animation:sparkle 4s infinite;
+
+}
+
+
+
+@keyframes sparkle{
+
+    0%{
+
+        opacity:0;
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:translateY(-200px);
+
+    }
+
+}
+
+
+
+/* Mobile Design */
+
+@media(max-width:600px){
+
+    h1{
+
+        font-size:28px;
+
+    }
+
+
+    .cake{
+
+        font-size:55px;
+
+    }
+
+
+    button{
+
+        width:85%;
+
+    }
+
+}
 
 /* Message */
 
@@ -212,3 +406,4 @@ button:hover{
     max-width:600px;
 
       }
+
