@@ -749,3 +749,114 @@ h2{
     }
 
 }
+
+
+/* 🎵 Music Section */
+
+.music-section,
+.final-section{
+
+    margin:40px auto;
+
+    padding:35px;
+
+    max-width:600px;
+
+    background:
+    rgba(255,255,255,0.15);
+
+    border-radius:30px;
+
+    border:2px solid gold;
+
+    box-shadow:
+    0 0 30px pink;
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+
+/* 🎵 Music Button */
+
+.music-section button{
+
+    animation:musicGlow 2s infinite alternate;
+
+}
+
+
+
+@keyframes musicGlow{
+
+    from{
+
+        box-shadow:0 0 10px gold;
+
+    }
+
+    to{
+
+        box-shadow:0 0 35px pink;
+
+    }
+
+}
+
+
+
+/* 👑 Final Queen Section */
+
+.final-section h1{
+
+    font-size:45px;
+
+    animation:queenGlow 2s infinite alternate;
+
+}
+
+
+
+@keyframes queenGlow{
+
+    from{
+
+        text-shadow:
+        0 0 10px gold;
+
+    }
+
+    to{
+
+        text-shadow:
+        0 0 30px pink,
+        0 0 50px gold;
+
+    }
+
+}
+
+
+
+.final-decoration{
+
+    margin-top:25px;
+
+    font-size:40px;
+
+    animation:finalFloat 4s infinite;
+
+}
+
+
+
+@keyframes finalFloat{
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    }
