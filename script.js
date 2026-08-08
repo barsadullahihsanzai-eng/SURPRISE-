@@ -202,21 +202,23 @@ function birthdayCelebration(){
     document.getElementById("cakeMessage").innerHTML =
     "🎉 Happy 14th Birthday Queen Ñajmusama 👑✨";
 
-}
 
 
-// Automatic little magic when opening surprise
 
-let oldOpen = openSurprise;
+// A
+// 🎉 Safe Birthday Celebration
 
-openSurprise = function(){
-
-    oldOpen();
+document.addEventListener("DOMContentLoaded", ()=>{
 
     setTimeout(()=>{
 
-        birthdayCelebration();
+        if(typeof birthdayCelebration === "function"){
+
+            birthdayCelebration();
+
+        }
 
     },1000);
 
-};
+});
+
