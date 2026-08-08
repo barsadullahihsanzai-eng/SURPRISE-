@@ -630,3 +630,122 @@ h2{
     }
 
 }
+
+/* 🍭🍉 Magical Garden Section */
+
+.favorite-garden,
+.gift-section,
+.dream-section{
+
+    margin:40px auto;
+    padding:30px;
+
+    max-width:600px;
+
+    background:
+    rgba(255,255,255,0.15);
+
+    border-radius:30px;
+
+    border:2px solid rgba(255,215,0,0.5);
+
+    box-shadow:
+    0 0 30px rgba(255,105,180,0.5);
+
+    backdrop-filter:blur(8px);
+
+}
+
+
+
+.garden-items{
+
+    font-size:50px;
+
+    margin:25px;
+
+    animation:gardenFloat 4s infinite ease-in-out;
+
+}
+
+
+
+.garden-items span{
+
+    display:inline-block;
+
+    margin:10px;
+
+}
+
+
+
+@keyframes gardenFloat{
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+}
+
+
+
+/* 🎁 Gift Box */
+
+.gift-box{
+
+    font-size:100px;
+
+    cursor:pointer;
+
+    display:inline-block;
+
+    animation:giftBounce 2s infinite;
+
+}
+
+
+
+@keyframes giftBounce{
+
+    50%{
+
+        transform:scale(1.15) rotate(8deg);
+
+    }
+
+}
+
+
+
+/* 🌙 Dream Stars */
+
+.stars-dream{
+
+    font-size:40px;
+
+    margin-top:20px;
+
+    animation:starGlow 2s infinite alternate;
+
+}
+
+
+
+@keyframes starGlow{
+
+    from{
+
+        text-shadow:0 0 10px white;
+
+    }
+
+    to{
+
+        text-shadow:0 0 30px gold;
+
+    }
+
+}
