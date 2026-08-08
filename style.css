@@ -860,3 +860,124 @@ h2{
     }
 
     }
+
+
+/* 👑 Moving Royal Crown */
+
+.crown{
+
+    animation:
+    crownFloat 3s infinite ease-in-out,
+    crownGlow 2s infinite alternate;
+
+}
+
+
+@keyframes crownFloat{
+
+    50%{
+
+        transform:translateY(-25px);
+
+    }
+
+}
+
+
+
+@keyframes crownGlow{
+
+    from{
+
+        filter:drop-shadow(0 0 5px gold);
+
+    }
+
+    to{
+
+        filter:drop-shadow(0 0 30px gold);
+
+    }
+
+}
+
+
+
+/* 🍭🍉 Favorite Decorations Animation */
+
+.royal-decoration span,
+.garden-items span{
+
+    display:inline-block;
+
+    animation:
+    itemFloat 3s infinite ease-in-out;
+
+}
+
+
+@keyframes itemFloat{
+
+    50%{
+
+        transform:translateY(-20px) rotate(5deg);
+
+    }
+
+}
+
+
+
+/* 🎈 Floating Birthday Decorations */
+
+.floating-decoration{
+
+    position:fixed;
+
+    font-size:35px;
+
+    animation:
+    floatUp 8s infinite linear;
+
+}
+
+
+
+@keyframes floatUp{
+
+    from{
+
+        transform:translateY(100vh);
+
+        opacity:1;
+
+    }
+
+
+    to{
+
+        transform:translateY(-100vh);
+
+        opacity:0;
+
+    }
+
+}
+
+
+
+/* ✨ Extra Sparkle Look */
+
+section{
+
+    transition:.5s;
+
+}
+
+
+section:hover{
+
+    transform:translateY(-5px);
+
+}
+
