@@ -119,3 +119,64 @@ window.onload = function(){
     createConfetti();
 
 };
+
+// 🎁 Royal Gift Opening
+
+function openGift(){
+
+    let gift = document.querySelector(".gift-box");
+
+    gift.innerHTML = "✨🎁✨";
+
+    createConfetti();
+
+    alert(
+    "👑 Happy 14th Birthday Queen Ñajmusama ✨\n\nA special wish is waiting for you 💫"
+    );
+
+}
+
+
+
+// ✨ Extra Sparkle Rain
+
+function sparkleRain(){
+
+    for(let i = 0; i < 30; i++){
+
+        let sparkle = document.createElement("div");
+
+        sparkle.innerHTML = "✨";
+
+        sparkle.style.position="fixed";
+        sparkle.style.left=Math.random()*100+"%";
+        sparkle.style.top="-10px";
+        sparkle.style.fontSize="25px";
+
+        document.body.appendChild(sparkle);
+
+
+        let fall=setInterval(()=>{
+
+            sparkle.style.top=
+            parseInt(sparkle.style.top)+
+            5+"px";
+
+
+            if(parseInt(sparkle.style.top)>window.innerHeight){
+
+                sparkle.remove();
+                clearInterval(fall);
+
+            }
+
+        },40);
+
+    }
+
+}
+
+
+// Start magical effects
+
+setInterval(sparkleRain,5000);
