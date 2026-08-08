@@ -222,3 +222,20 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 });
 
+document.addEventListener("click", function(e){
+  if(e.target.innerText.includes("Light The Candles")){
+    lightCandles();
+  }
+
+  if(e.target.innerText.includes("Close your eyes")){
+    makeWish();
+  }
+
+  if(e.target.innerText.includes("Blow The Candles")){
+    blowCandles();
+  }
+
+  if(e.target.innerText.includes("Cut The Cake")){
+    cutCake();
+  }
+});
