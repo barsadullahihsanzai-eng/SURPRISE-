@@ -180,3 +180,13 @@ function sparkleRain(){
 // Start magical effects
 
 setInterval(sparkleRain,5000);
+
+// 🎵 Birthday Music Function
+
+function playMusic(){
+
+    alert(
+    "🎵 Add your birthday music file as music.mp3 to your project, then the music button will play it ✨"
+    );
+
+}
